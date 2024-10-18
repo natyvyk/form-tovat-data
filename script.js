@@ -1,4 +1,7 @@
-const fahrnheit = prompt ("Uveďte teplotu ve stupních Fahrenheita:")
-const celsius = Number((5*(fahrnheit-32))/9)
+const person = {
+    name: prompt ("Zadejte prosím vaše jméno a příjmení:"),
+    age: prompt("Zadejte prosím váš věk:"),
+    window: window.navigator.language ,
+}
 
-document.body.innerHTML += "<p>" + fahrnheit + " stupňů fahrenheita je " + celsius + " stupňů celsia. </p>"
+document.body.innerHTML += "<p>" + person.name + ", " + person.age + ", preferovaný jazyk komunikace: " + person.window + "</p>"
